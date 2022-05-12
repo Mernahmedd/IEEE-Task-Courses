@@ -204,9 +204,34 @@ button {
     }
 }
 
+
+@media screen and (max-width:393px) {
+    .box{
+        width: 19rem;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .box{
+        width: 20rem;
+    }
+}
+
 @media screen and (max-width:375px) {
     .box{
+        width: 19rem;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .box {
         width: 15rem;
+    }
+
+    h1{
+        font-size: 15px;
+        font-weight: bold;
     }
 }
 
