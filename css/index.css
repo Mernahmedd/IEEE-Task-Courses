@@ -419,7 +419,6 @@ main .column.right {
     font-size: 1rem;
     width: 100%;
     min-height: 0;
-    vertical-align: top;
 }
 
 @media (min-width: 641px) {
