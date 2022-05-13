@@ -8,8 +8,7 @@
 :root {
     --main-color: #fff;
     --secound-main-color: #02d2ea;
-    --footer-color: #1F3035;
-    --app-content-secondary-color: #1d283c;
+    --footer-color: #1d283c;
     --hover-shadow: rgba(16, 24, 39, 0.8) 0px 6px 12px -2px;
 }
 
@@ -87,7 +86,7 @@ a {
 /* Start Media Queries */
 
 @media only screen and (max-width: 720px) {
-    .navbar ul {
+    /* .navbar ul {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -111,6 +110,13 @@ a {
 
     .navbar li a {
         font-size: 1rem;
+    } */
+    .navbar ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(6, 1.5fr);
+        justify-self: end;
+
     }
 
 }
@@ -318,7 +324,7 @@ button {
 /* Start Footer */
 .footer {
     width: 100%;
-    background: var(--app-content-secondary-color);
+    background: var(--footer-color);
     display: block;
 }
 
@@ -563,7 +569,7 @@ main .column.right {
 .container .video-contanier .video{
     height: 250px;
     width: 350px;
-    border: 5px solid var(--app-content-secondary-color);
+    border: 5px solid var(--footer-color);
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     cursor: pointer;
