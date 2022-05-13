@@ -263,6 +263,7 @@ button {
     margin: 10px 0 0;
     line-height: 1.5;
     color: #777;
+    padding-bottom: 15px;
 }
 
 .courses .box .info {
@@ -298,6 +299,10 @@ button {
 .add-div {
     display: flex;
     justify-content: center;
+}
+
+.edit-btn{
+    width: fit-content;
 }
 
 .add-btn {
@@ -404,10 +409,6 @@ li i {
 /* End Footer */
 
 /* Start Show */
-.noscroll {
-    overflow: hidden;
-}
-
 main {
     font-size: 0;
 }
@@ -581,34 +582,6 @@ main .column.right {
     transform: scale(1.1);
 }
 
-.container .popup .popup-video{
-    height: 100%;
-    width: 100%;
-}
-
-.container .popup span{
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    font-size: 50px;
-    color: var(--main-color);
-    font-weight: bolder;
-    z-index: 100;
-    cursor: pointer;
-}
-
-@media (max-width:7688px) {
-    .container .popup-video .video{
-        width: 95%;
-    }
-}
-
-@media (max-width:7688px) {
-    .container .popup-video-open .video {
-        width: 95%;
-    }
-}
-
 /* End Show */
 
 
@@ -625,6 +598,33 @@ main .column.right {
 }
 .container .popup-open {
     display: block;
+}
+.container .popup .popup-video {
+    height: 100%;
+    width: 100%;
+}
+
+.container .popup span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: var(--main-color);
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+@media (max-width:7688px) {
+    .container .popup-video .video {
+        width: 95%;
+    }
+}
+
+@media (max-width:7688px) {
+    .container .popup-video-open .video {
+        width: 95%;
+    }
 }
 /* end pop up */
 /* start overlay */
