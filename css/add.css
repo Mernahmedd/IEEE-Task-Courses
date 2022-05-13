@@ -8,7 +8,6 @@
 :root {
     --main-color: #fff;
     --secound-main-color: #02d2ea;
-    --footer-color: #1F3035;
     --footer-color: #1d283c;
     --hover-shadow: rgba(16, 24, 39, 0.8) 0px 6px 12px -2px;
 }
@@ -76,6 +75,7 @@ a {
     font-weight: 400;
     text-decoration: none;
     transition: color 0.3s ease-out;
+    cursor: pointer;
 }
 
 .nav-item a:hover {
@@ -86,32 +86,25 @@ a {
 /* Start Media Queries */
 
 @media only screen and (max-width: 720px) {
+
     .navbar ul {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        justify-content: start;
-        top: 55px;
-        background-color: #fff;
-        width: 100%;
-        height: calc(100vh - 55px);
-        transform: translate(-101%);
-        text-align: center;
-        overflow: hidden;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(6, 1.5fr);
+        justify-self: end;
+        gap: 5px;
     }
 
-    .navbar li {
-        padding: 15px;
-    }
+}
 
-    .navbar li:first-child {
-        margin-top: 50px;
+@media only screen and (max-width: 665px) {
+    .navbar ul li {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(6, 1.5fr);
+        justify-self: end;
+        gap: 7px;
     }
-
-    .navbar li a {
-        font-size: 1rem;
-    }
-
 }
 
 /* End Navbar */
