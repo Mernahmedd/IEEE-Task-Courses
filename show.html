@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
     <title>Details</title>
 </head>
+
 <body>
     <!-- Start Navbar -->
     <div class="page-wrapper">
@@ -31,7 +33,7 @@
     <!-- End Navbar -->
     <main>
         <section class="column left banner">
-            <img class="video-banner-img static-imag" src="images/6.png" alt="" />
+            <img class="video-banner-img static-imag" src="images/html.png" alt="" />
         </section>
         <section class="column right">
             <article class="contents">
@@ -69,12 +71,48 @@
         <h1>Course's Videos</h1>
         <br>
         <div class="video-contanier">
-            <div class="video"><video src="images/1.mp4"></video></div>
-            <div class="video"><video src="images/22.mp4"></video></div>
-            <div class="video"><video src="images/3.mp4"></video></div>
-            <div class="video"><video src="images/4.mp4"></video></div>
-            <div class="video"><video src="images/5.mp4"></video></div>
-            <div class="video"><video src="images/6.mp4"></video></div>
+            <div id="one" class="video">
+                <video src="images/1.mp4"></video>
+                <div class="overlay">
+                    <img src="images/1.jfif" alt="">
+                    <i class="fa-solid fa-circle-play" src="images/1.mp4"></i>
+                </div>
+            </div>
+            <div id="two" class="video">
+                <video src="images/2.mp4"></video>
+                <div class="overlay">
+                    <img src="images/2.jfif" alt="">
+                    <i class="fa-solid fa-circle-play" src="images/2.mp4"></i>
+                </div>
+            </div>
+            <div id="three" class="video">
+                <video src="images/3.mp4"></video>
+                <div class="overlay">
+                    <img src="images/3.jfif" alt="">
+                    <i class="fa-solid fa-circle-play" src="images/3.mp4"></i>
+                </div>
+            </div>
+            <div id="four" class="video">
+                <video src="images/4.mp4"></video>
+                <div class="overlay">
+                    <img src="images/4.jfif" alt="">
+                    <i class="fa-solid fa-circle-play" src="images/4.mp4"></i>
+                </div>
+            </div>
+            <div id="five" class="video">
+                <video src="images/5.mp4"></video>
+                <div class="overlay">
+                    <img src="images/5.jfif" alt="">
+                    <i class="fa-solid fa-circle-play" src="images/5.mp4"></i>
+                </div>
+            </div>
+            <div id="six" class="video">
+                <video src="images/6.mp4"></video>
+                <div class="overlay">
+                    <img src="images/6.jfif" alt="">
+                    <i class="fa-solid fa-circle-play" src="images/6.mp4"></i>
+                </div>
+            </div>
         </div>
         <div class="popup">
             <span class="popup-span">&times;</span>
@@ -121,4 +159,5 @@
     </div>
     <script src="js/index.js"></script>
 </body>
+
 </html>
