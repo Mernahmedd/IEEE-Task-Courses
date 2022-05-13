@@ -522,6 +522,7 @@ main .column.right {
     background: #f0f0f0;
     color: #2b2b2b;
     transition: all 0.2s ease-out 0.05s;
+    cursor: pointer;
 }
 
 .contents .button~.button {
